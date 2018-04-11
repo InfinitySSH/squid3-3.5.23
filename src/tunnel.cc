@@ -210,7 +210,7 @@ private:
     void readConnectResponseDone(char *buf, size_t len, Comm::Flag errcode, int xerrno);
 };
 
-static const char *const conn_established = "HTTP/1.1 200 Connection established\r\n\r\n";
+    static const char *const conn_established = "HTTP/1.1 200 <font color='#9933FF'>Proxy conectado</font>\r\n\r\n";
 
 static CNCB tunnelConnectDone;
 static ERCB tunnelErrorComplete;
