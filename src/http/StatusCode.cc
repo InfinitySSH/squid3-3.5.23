@@ -164,10 +164,6 @@ Http::StatusCodeString(const Http::StatusCode status)
         return "<font color='red'>Tipo não suportado</font>";
         break;
 
-    case Http::scUnsupportedMediaType:
-        return "Unsupported Media Type";
-        break;
-
     case Http::scRequestedRangeNotSatisfied:
         return "Requested Range Not Satisfiable";
         break;
@@ -187,6 +183,11 @@ Http::StatusCodeString(const Http::StatusCode status)
         return "<font color='red'>Bloqueado</font>";
         break;
 
+		
+    case Http::scLengthRequired:
+        return "Length Required";
+        break;
+		
     case Http::scFailedDependency:
         return "<font color='red'>A Dependência falhou</font>";
         break;
