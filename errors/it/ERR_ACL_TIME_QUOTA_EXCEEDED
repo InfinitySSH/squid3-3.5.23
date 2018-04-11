@@ -1,6 +1,5 @@
 
 <html><head>
-<meta type="copyright" content="Copyright (C) 1996-2016 The Squid Software Foundation and contributors">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>ERRORE: non è possibile accedere alla URL richiesta</title>
 <style type="text/css"><!-- 
@@ -21,10 +20,10 @@ body
 <p>Mentre si cercava di accedere alla URL <a href="%U">%U</a> si è presentato il seguente errore:</p>
 
 <blockquote id="error">
-<p><b>Tempo disponibile esaurito.</b></p>
+<p><b>Time Quota Exceeded.</b></p>
 </blockquote>
 
-<p>Questo proxy impone un limite al tempo a tua disposizione online, che &egrave; terminato. Verr&agrave; automaticamente riempito al momento opportuno.</p>
+<p>This proxy limits your time online with a quota. Your time budget is now empty but will be refilled when the configured time period starts again.</p>
 <p>Questi limiti sono stati stabiliti dall'ISP che gestisce questo proxy. Se ritieni sia un errore, contatta il fornitore del servizio.</p>
 
 <p>L'amministratore del proxy è <a href="mailto:%w%W">%w</a>.</p>
@@ -33,7 +32,7 @@ body
 
 <hr>
 <div id="footer">
-<p>Generato da %h (%s) il %T</p>
+<p>Generato da %h (%s) il %T.</p>
 <!-- %c -->
 </div>
 </body></html>

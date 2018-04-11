@@ -1,6 +1,5 @@
 
 <html><head>
-<meta type="copyright" content="Copyright (C) 1996-2016 The Squid Software Foundation and contributors">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Configurazione del browser</title>
 <style type="text/css"><!--
@@ -25,19 +24,19 @@ body
 
 <div id="firefox"> For Firefox browsers go to: <ul>
 <li>Strumenti -&gt; Opzioni -&gt; Avanzate -&gt; Rete -&gt; Impostazioni di connessione</li>
-<li>Nel box "Proxy HTTP" inserisci l'indirizzo del proxy (%h) e la porta %b.</li>
+<li>In the HTTP proxy box type the proxy name %h and port %b.</li>
 </ul>
 </div>
 
 <div id="microsoft"> For Internet Explorer browsers go to: <ul>
 <li>Strumenti -&gt; Opzioni Internet -&gt; Connessioni -&gt; Impostazioni LAN -&gt;Proxy</li>
-<li>Nel box "Proxy HTTP" inserisci l'indirizzo del proxy (%h) e la porta %b.</li>
+<li>In the HTTP proxy box type the proxy name %h and port %b.</li>
 </ul>
 </div>
 
 <div id="opera"> For Opera browsers go to: <ul>
 <li>Strumenti -&gt; Preferenze -&gt; Avanzate -&gt; Rete -&gt; Server proxy</li>
-<li>Nel box "Proxy HTTP" inserisci l'indirizzo del proxy (%h) e la porta %b.</li>
+<li>In the HTTP proxy box type the proxy name %h and port %b.</li>
 </ul>
 </div>
 
@@ -47,7 +46,7 @@ body
 
 <hr>
 <div id="footer">
-<p>Generato da %h (%s) il %T</p>
+<p>Generato da %h (%s) il %T.</p>
 <!-- %c -->
 </div>
 </body></html>

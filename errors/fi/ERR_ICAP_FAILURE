@@ -1,6 +1,5 @@
 
 <html><head>
-<meta type="copyright" content="Copyright (C) 1996-2016 The Squid Software Foundation and contributors">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>VIRHE: Pyydettyä URL-osoitetta ei voitu hakea</title>
 <style type="text/css"><!-- 
@@ -21,16 +20,16 @@ body
 <p>The following error was encountered while trying to retrieve the URL: <a href="%U">%U</a></p>
 
 <blockquote id="error">
-<p><b>ICAP protokollavirhe.</b></p>
+<p><b>ICAP protocol error.</b></p>
 </blockquote>
 
 <p id="sysmsg">Järjestelmä palautti viestin:<i>%E</i></p>
 
 <p>This means that some aspect of the ICAP communication failed.</p>
 
-<p>Muutamia mahdollisia ongelmia ovat:</p>
+<p>Mahdollisia ongelmia:</p>
 <ul>
-<li><p>ICAP palvelin ei ole tavoitettavissa.</p></li>
+<li><p>The ICAP server is not reachable.</p></li>
 <li><p>An Illegal response was received from the ICAP server.</p></li>
 </ul>
 
