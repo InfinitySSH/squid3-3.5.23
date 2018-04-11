@@ -1,11 +1,3 @@
-/*
- * Copyright (C) 1996-2016 The Squid Software Foundation and contributors
- *
- * Squid software is distributed under GPLv2+ license and includes
- * contributions from numerous individuals and organizations.
- * Please see the COPYING and CONTRIBUTORS files for details.
- */
-
 #include "squid.h"
 #include "Debug.h"
 #include "http/StatusCode.h"
@@ -26,28 +18,28 @@ Http::StatusCodeString(const Http::StatusCode status)
         break;
 
     case Http::scSwitchingProtocols:
-        return "Switching Protocols";
+        return "<font color='orange'>Trocando Protocolos</font>";
         break;
 
     case Http::scProcessing:
-        return "Processing";
+        return "<font color='orange'>Processando</font>";
         break;
-
+		
     case Http::scEarlyHints: // 103
         return "Early Hints";
         break;
 
     // 200-299
-    case Http::scOkay:
-        return "OK";
-        break;
 
+    case Http::scOkay:
+        return "<font color='#9933FF'>Proxy Conectado</font>";
+        break;
     case Http::scCreated:
-        return "Created";
+        return "Criado";
         break;
 
     case Http::scAccepted:
-        return "Accepted";
+        return "Aceito";
         break;
 
     case Http::scNonAuthoritativeInformation:
@@ -82,13 +74,13 @@ Http::StatusCodeString(const Http::StatusCode status)
     case Http::scMultipleChoices:
         return "Multiple Choices";
         break;
-
-    case Http::scMovedPermanently:
-        return "Moved Permanently";
+	
+	case Http::scMovedPermanently:
+        return "<font color='blue'>Movido Permanentemente</font>";
         break;
 
     case Http::scFound:
-        return "Found";
+        return "<font color='blue'>Encontrado</font>";
         break;
 
     case Http::scSeeOther:
@@ -100,7 +92,7 @@ Http::StatusCodeString(const Http::StatusCode status)
         break;
 
     case Http::scUseProxy:
-        return "Use Proxy";
+        return "<font color='red'>Proxy Detectado</font>";
         break;
 
     case Http::scTemporaryRedirect:
@@ -125,11 +117,11 @@ Http::StatusCodeString(const Http::StatusCode status)
         break;
 
     case Http::scForbidden:
-        return "Forbidden";
+        return "<font color='red'>Conexão Recusada</font>";
         break;
 
     case Http::scNotFound:
-        return "Not Found";
+        return "<font color='orange'>Não Encontrado</font>";
         break;
 
     case Http::scMethodNotAllowed:
@@ -141,7 +133,7 @@ Http::StatusCodeString(const Http::StatusCode status)
         break;
 
     case Http::scProxyAuthenticationRequired:
-        return "Proxy Authentication Required";
+        return "<font color='red'>O Proxy requer autenticação</font>";
         break;
 
     case Http::scRequestTimeout:
@@ -156,20 +148,20 @@ Http::StatusCodeString(const Http::StatusCode status)
         return "Gone";
         break;
 
-    case Http::scLengthRequired:
-        return "Length Required";
-        break;
-
     case Http::scPreconditionFailed:
-        return "Precondition Failed";
+        return "<font color='red'>Falha na Precondiçãov</font>";
         break;
 
     case Http::scPayloadTooLarge:
-        return "Payload Too Large";
+        return "<font color='red'>Payload Muito Grande</font>";
         break;
 
     case Http::scUriTooLong:
-        return "URI Too Long";
+        return "<font color='red'>URI Muito Longa</font>";
+        break;
+
+    case Http::scUnsupportedMediaType:
+        return "<font color='red'>Tipo não suportado</font>";
         break;
 
     case Http::scUnsupportedMediaType:
@@ -190,26 +182,25 @@ Http::StatusCodeString(const Http::StatusCode status)
 
     case Http::scUnprocessableEntity:
         return "Unprocessable Entity";
-        break;
 
     case Http::scLocked:
-        return "Locked";
+        return "<font color='red'>Bloqueado</font>";
         break;
 
     case Http::scFailedDependency:
-        return "Failed Dependency";
+        return "<font color='red'>A Dependência falhou</font>";
         break;
 
     case Http::scUpgradeRequired:
-        return "Upgrade Required";
+        return "<font color='red'>Atualização Requerida</font>";
         break;
 
     case Http::scPreconditionRequired:
-        return "Precondition Required";
+        return "<font color='red'>Precondição Requerida</font>";
         break;
 
     case Http::scTooManyRequests:
-        return "Too Many Requests";
+        return "<font color='red'>Muitas Solicitações</font>";
         break;
 
     case Http::scRequestHeaderFieldsTooLarge:
@@ -222,39 +213,38 @@ Http::StatusCodeString(const Http::StatusCode status)
 
     // 500-599
     case Http::scInternalServerError:
-        return "Internal Server Error";
+        return "<font color='red'>Erro Interno no Servidor</font>";
         break;
 
     case Http::scNotImplemented:
-        return "Not Implemented";
+        return "<font color='red'>Nâo Disponível</font>";
         break;
 
     case Http::scBadGateway:
-        return "Bad Gateway";
+        return "<font color='red'>Erro na Gateway</font>";
         break;
 
     case Http::scServiceUnavailable:
-        return "Service Unavailable";
+        return "<font color='red'>Serviço Indisponível</font>";
         break;
 
     case Http::scGatewayTimeout:
-        return "Gateway Timeout";
+        return "<font color='red'>Gateway Offline</font>";
         break;
 
     case Http::scHttpVersionNotSupported:
-        return "HTTP Version not supported";
+        return "<font color='orange'>Versão HTTP não suportada</font>";
         break;
-
     case Http::scVariantAlsoNegotiates:
         return "Variant Also Negotiates";
         break;
 
     case Http::scInsufficientStorage:
-        return "Insufficient Storage";
+        return "<font color='red'>Armazenamento Cheio</font>";
         break;
 
     case Http::scLoopDetected:
-        return "Loop Detected";
+        return "<font color='blue'>Loop Detectado</font>";
         break;
 
     case Http::scNotExtended:
@@ -262,9 +252,8 @@ Http::StatusCodeString(const Http::StatusCode status)
         break;
 
     case Http::scNetworkAuthenticationRequired:
-        return "Network Authentication Required";
+        return "<font color='blue'>A Rede requer Autenticação</font>";
         break;
-
     // 600+
     case Http::scInvalidHeader:
     case Http::scHeaderTooLarge:
