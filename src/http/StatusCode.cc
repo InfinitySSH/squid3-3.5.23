@@ -161,7 +161,7 @@ Http::StatusCodeString(const Http::StatusCode status)
         break;
 
     case Http::scUnsupportedMediaType:
-        return "<font color='red'>Tipo não suportado</font>";
+        return "<font color='red'>Não suportado</font>";
         break;
 
     case Http::scRequestedRangeNotSatisfied:
